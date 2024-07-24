@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "CLI application development template using unbuild as a build tool.",
   "bin": {
-    "hello-cli": "dist/index.mjs"
+    "cover": "dist/index.mjs"
   },
   "files": [
     "dist"
@@ -31,5 +31,8 @@
     "typescript": "^5.4.2",
     "typescript-eslint": "^7.7.1",
     "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "swagger-typescript-api": "^13.0.13"
   }
 }

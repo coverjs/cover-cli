@@ -1,6 +1,14 @@
 #!/usr/bin/env node
+import path from "node:path";
+import { generateApi } from "swagger-typescript-api";
+
 const bootstrap = () => {
-  console.log(`🥳 Welcome to use the CLI Unbuild Template!`);
+  generateApi({
+    name: "Api.ts",
+    output: path.resolve(process.cwd(), "./src/services"),
+    url: "http://154.221.27.105:1118/docs-json",
+    httpClientType: "axios",
+  });
 };
 
 bootstrap();
