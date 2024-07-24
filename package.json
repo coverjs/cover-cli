@@ -1,0 +1,35 @@
+{
+  "name": "cover-cli",
+  "version": "0.0.0",
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "description": "CLI application development template using unbuild as a build tool.",
+  "bin": {
+    "hello-cli": "dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "build:out": "unbuild --out",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "@types/node": "^20.12.5",
+    "eslint": "^8.57.0",
+    "globals": "^15.0.0",
+    "typescript": "^5.4.2",
+    "typescript-eslint": "^7.7.1",
+    "unbuild": "^2.0.0"
+  }
+}
