@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/coverjs/cover-cli/compare/v0.1.0...v0.1.1) (2024-07-31)
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复swagger-typescript-api依赖问题 ([148b558](https://github.com/coverjs/cover-cli/commit/148b558a3cc0eeb6d129476443a53d01fdfa52ae)) by.@hacxy
+
+## [0.1.1](https://github.com/coverjs/cover-cli/compare/v0.1.0...v0.1.1) (2024-07-31)
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复swagger-typescript-api依赖问题 ([148b558](https://github.com/coverjs/cover-cli/commit/148b558a3cc0eeb6d129476443a53d01fdfa52ae)) by.@hacxy
+
 ## 0.1.0 (2024-07-31)
 
 ### ✨ Features | 新功能
