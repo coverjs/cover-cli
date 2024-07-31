@@ -6,9 +6,10 @@ export default defineBuildConfig({
   entries: ["src/index"],
   clean: true,
   // Generates .d.ts declaration file
-  declaration: false,
+  declaration: true,
   sourcemap: enableOut,
   // Change outDir, default is 'dist'
   outDir: enableOut ? "out" : "dist",
   rollup: { esbuild: { target: "node18", minify: true } },
+  externals: ["esbuild", "swagger-typescript-api"],
 });

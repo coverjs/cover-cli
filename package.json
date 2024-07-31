@@ -5,17 +5,23 @@
   "author": "",
   "license": "MIT",
   "description": "CLI application development template using unbuild as a build tool.",
+  "module": "dist/index.mjs",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "bin": {
     "cover": "dist/index.mjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "template"
   ],
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild",
     "build:out": "unbuild --out",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "changed": "lerna version --conventional-commits --create-release github --yes",
+    "release": "lerna publish from-package --yes"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
@@ -26,13 +32,17 @@
   "devDependencies": {
     "@eslint/js": "^9.1.1",
     "@types/node": "^20.12.5",
+    "esbuild": "^0.23.0",
     "eslint": "^8.57.0",
     "globals": "^15.0.0",
+    "swagger-typescript-api": "^13.0.13",
     "typescript": "^5.4.2",
     "typescript-eslint": "^7.7.1",
-    "unbuild": "^2.0.0"
-  },
-  "dependencies": {
-    "swagger-typescript-api": "^13.0.13"
+    "unbuild": "^2.0.0",
+    "@lerna-lite/cli": "^3.3.3",
+    "@lerna-lite/publish": "^3.3.3",
+    "@lerna-lite/version": "^3.3.3",
+    "concurrently": "^8.2.2",
+    "conventional-changelog-conventionalcommits": "^7.0.2"
   }
 }
