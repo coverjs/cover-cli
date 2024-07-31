@@ -40,9 +40,11 @@
     "esbuild": "^0.23.0",
     "eslint": "^8.57.0",
     "globals": "^15.0.0",
-    "swagger-typescript-api": "^13.0.13",
     "typescript": "^5.4.2",
     "typescript-eslint": "^7.7.1",
     "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "swagger-typescript-api": "^13.0.13"
   }
 }

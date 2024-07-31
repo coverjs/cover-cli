@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      swagger-typescript-api:
+        specifier: ^13.0.13
+        version: 13.0.13(encoding@0.1.13)
     devDependencies:
       '@eslint/js':
         specifier: ^9.1.1
@@ -38,9 +42,6 @@ importers:
       globals:
         specifier: ^15.0.0
         version: 15.8.0
-      swagger-typescript-api:
-        specifier: ^13.0.13
-        version: 13.0.13(encoding@0.1.13)
       typescript:
         specifier: ^5.4.2
         version: 5.5.4
