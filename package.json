@@ -6,13 +6,17 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
-  "author": "hacxy",
+  "author": {
+    "email": "hacxy.js@outlook.com",
+    "name": "hacxy"
+  },
   "license": "MIT",
   "files": [
     "dist",
     "template"
   ],
   "keywords": [
+    "coverjs",
     "cli"
   ],
   "bin": {
@@ -21,7 +25,9 @@
   "scripts": {
     "dev": "tsup --watch --sourcemap",
     "build": "tsup",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "update": "lerna version --conventional-commits --create-release github --yes",
+    "release": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "@eslint/js": "^9.1.1",
