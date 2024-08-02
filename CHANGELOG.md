@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/coverjs/cover-cli/compare/v0.1.1...v0.2.0) (2024-08-02)
+
+### ✨ Features | 新功能
+
+* 使用cac提供交互式命令 ([894fd2e](https://github.com/coverjs/cover-cli/commit/894fd2e73a143dd3f6e67d9571bc2706bc68ed12)) by.@hacxy
+
+### 🐛 Bug Fixes | Bug 修复
+
+* cover.config支持ts文件 ([616b281](https://github.com/coverjs/cover-cli/commit/616b28198060889c496a9996de479659f976ab67)) by.@hacxy
+
+## [0.2.0](https://github.com/coverjs/cover-cli/compare/v0.1.1...v0.2.0) (2024-08-02)
+
+### ✨ Features | 新功能
+
+* 使用cac提供交互式命令 ([894fd2e](https://github.com/coverjs/cover-cli/commit/894fd2e73a143dd3f6e67d9571bc2706bc68ed12)) by.@hacxy
+
+### 🐛 Bug Fixes | Bug 修复
+
+* cover.config支持ts文件 ([616b281](https://github.com/coverjs/cover-cli/commit/616b28198060889c496a9996de479659f976ab67)) by.@hacxy
+
 ## [0.1.1](https://github.com/coverjs/cover-cli/compare/v0.1.0...v0.1.1) (2024-07-31)
 
 ### 🐛 Bug Fixes | Bug 修复
