@@ -9,9 +9,12 @@ export const getConfig = async (): Promise<UserConfig> => {
   const jsConfigPath = path.resolve(process.cwd(), JS_CONFIG_FILE);
   const tsConfigPath = path.resolve(process.cwd(), TS_CONFIG_FILE);
   const configPath = fs.existsSync(jsConfigPath) ? jsConfigPath : tsConfigPath;
+
   if (!fs.existsSync(configPath)) {
-    throw new Error('cover.config.js or cover.config.ts not found');
+    console.log('cover.config not found');
+    process.exit(1);
   }
+
   if (hasTsExtension(configPath)) {
     const tsCode = fs.readFileSync(configPath, {
       encoding: 'utf-8'
@@ -33,24 +36,6 @@ export const getConfig = async (): Promise<UserConfig> => {
     const config = await import(configPath);
     return config.default;
   }
-
-  // console.log(fs.existsSync(configPath));
-  // const code = fs.readFileSync(path.resolve(process.cwd(), "cover.config.ts"), {
-  //   encoding: "utf-8",
-  // });
-
-  // const fileBase = `cover.timestamp-${Date.now()}-${Math.random()
-  //   .toString(16)
-  //   .slice(2)}`;
-
-  // const fileNameTmp = `${fileBase}.mjs`;
-  // const fileUrl = `${pathToFileURL(fileBase)}.mjs`;
-  // await fs.writeFileSync(fileNameTmp, code);
-  // try {
-  //   const config = await import(fileUrl);
-  //   return config;
-  // } finally {
-  // }
 };
 
 export const hasTsExtension = (str: string) => {

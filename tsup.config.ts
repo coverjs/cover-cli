@@ -6,7 +6,7 @@ export default defineConfig({
   target: 'node18',
   platform: 'node',
   bundle: true,
-  clean: false,
+  clean: true,
   minify: true,
   dts: true
   // watch: true,

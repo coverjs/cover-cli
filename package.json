@@ -8,6 +8,10 @@
   "module": "dist/index.js",
   "author": "hacxy",
   "license": "MIT",
+  "files": [
+    "dist",
+    "template"
+  ],
   "keywords": [
     "cli"
   ],
@@ -21,21 +25,22 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.1.1",
-    "@types/node": "^20.12.5",
-    "eslint": "^8.57.0",
-    "globals": "^15.0.0",
-    "tsup": "^8.0.2",
-    "typescript-eslint": "^7.7.1",
     "@lerna-lite/cli": "^3.3.3",
     "@lerna-lite/publish": "^3.3.3",
     "@lerna-lite/version": "^3.3.3",
+    "@types/node": "^20.12.5",
     "concurrently": "^8.2.2",
-    "conventional-changelog-conventionalcommits": "^7.0.2"
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "eslint": "^8.57.0",
+    "globals": "^15.0.0",
+    "tsup": "^8.0.2",
+    "typescript-eslint": "^7.7.1"
   },
   "peerDependencies": {
     "typescript": "^5.4.4"
   },
   "dependencies": {
-    "swagger-typescript-api": "^13.0.14"
+    "swagger-typescript-api": "^13.0.14",
+    "cac": "^6.7.14"
   }
 }
