@@ -13,7 +13,7 @@ export const handleCommands = (cli: CAC) => {
     try {
       await generateApi({
         templates: path.resolve(__dirname, '../template'),
-        output: path.resolve(process.cwd(), './src/services/http'),
+        output: path.resolve(process.cwd(), './src/services'),
         silent: true,
         ...generateApiConfig
       });
