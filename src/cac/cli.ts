@@ -3,7 +3,7 @@ import pkg from '../../package.json';
 import { handleCommands } from './commands';
 
 export const registerCli = () => {
-  const cli = cac();
+  const cli = cac('cover-cli');
   cli.version(pkg.version);
   handleCommands(cli);
   cli.help();
