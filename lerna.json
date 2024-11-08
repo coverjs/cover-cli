@@ -2,9 +2,7 @@
   "$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
   "version": "0.2.1",
   "npmClient": "pnpm",
-  "packages": [
-    "."
-  ],
+  "packages": ["."],
   "command": {
     "version": {
       "conventionalCommits": true,
@@ -45,7 +43,7 @@
       },
       {
         "type": "perf",
-        "section": "🚀 Performance Improvements | 优化"
+        "hidden": true
       },
       {
         "type": "test",
