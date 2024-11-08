@@ -3,9 +3,7 @@
   "version": "0.2.1",
   "description": "",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
+  "main": "index.js",
   "author": {
     "email": "hacxy.js@outlook.com",
     "name": "hacxy"
@@ -20,11 +18,12 @@
     "cli"
   ],
   "bin": {
-    "cover": "dist/index.js"
+    "cover": "index.js"
   },
   "scripts": {
-    "dev": "tsup --watch --sourcemap",
-    "build": "tsup",
+    "start": "node index.js",
+    "dev": "unbuild --stub && npm link",
+    "build": "unbuild",
     "typecheck": "tsc --noEmit",
     "changed": "lerna version --conventional-commits --create-release github --yes",
     "release": "lerna publish from-package --yes"
@@ -39,8 +38,8 @@
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "eslint": "^8.57.0",
     "globals": "^15.0.0",
-    "tsup": "^8.0.2",
-    "typescript-eslint": "^7.7.1"
+    "typescript-eslint": "^7.7.1",
+    "unbuild": "^2.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.4.4"

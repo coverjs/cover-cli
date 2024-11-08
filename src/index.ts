@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { registerCli } from './cac';
 import { UserConfig } from './types';
 
