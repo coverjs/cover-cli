@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/coverjs/cover-cli/compare/v0.2.1...v0.3.0) (2024-11-25)
+
+### ✨ Features | 新功能
+
+* 添加校验git信息命令 ([083e2c9](https://github.com/coverjs/cover-cli/commit/083e2c9bf9fde914d43ef20317869505ad6bf356)) by.@hacxy
+
+## [0.3.0](https://github.com/coverjs/cover-cli/compare/v0.2.1...v0.3.0) (2024-11-25)
+
+### ✨ Features | 新功能
+
+* 添加校验git信息命令 ([083e2c9](https://github.com/coverjs/cover-cli/commit/083e2c9bf9fde914d43ef20317869505ad6bf356)) by.@hacxy
+
 ## [0.2.1](https://github.com/coverjs/cover-cli/compare/v0.2.0...v0.2.1) (2024-11-08)
 
 **Note:** Version bump only for package cover-cli
