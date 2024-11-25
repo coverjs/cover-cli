@@ -1,7 +1,7 @@
-import { registerCli } from './cac';
+import { bootstrap } from './cac';
 import { UserConfig } from './types';
 
-registerCli();
+bootstrap();
 
 export const defineConfig = (options: UserConfig) => {
   return options;

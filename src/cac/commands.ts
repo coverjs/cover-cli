@@ -1,7 +1,7 @@
 import type { CAC } from 'cac';
 import path from 'node:path';
 import { generateApi } from 'swagger-typescript-api';
-import { getConfig } from '../utils';
+import { checkCommit, getConfig } from '../utils';
 import { fileURLToPath } from 'node:url';
 
 export const handleCommands = (cli: CAC) => {
@@ -24,4 +24,11 @@ export const handleCommands = (cli: CAC) => {
 
     console.log('Api 生成成功~');
   });
+
+  cli
+    .command('check')
+    .option('--commit-msg', '校验git提交信息')
+    .action(async (options) => {
+      if (options.commitMsg) checkCommit();
+    });
 };
