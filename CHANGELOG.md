@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/coverjs/cover-cli/compare/v0.3.0...v0.3.1) (2024-11-27)
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复defineConfig方法类型丢失的问题 ([7ec4f4a](https://github.com/coverjs/cover-cli/commit/7ec4f4a3c41abe74210742b6004ce1c19763754a)) by.@hacxy
+
+## [0.3.1](https://github.com/coverjs/cover-cli/compare/v0.3.0...v0.3.1) (2024-11-27)
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复defineConfig方法类型丢失的问题 ([7ec4f4a](https://github.com/coverjs/cover-cli/commit/7ec4f4a3c41abe74210742b6004ce1c19763754a)) by.@hacxy
+
 ## [0.3.0](https://github.com/coverjs/cover-cli/compare/v0.2.1...v0.3.0) (2024-11-25)
 
 ### ✨ Features | 新功能
