@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "description": "",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "author": {
     "email": "hacxy.js@outlook.com",
