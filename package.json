@@ -3,7 +3,8 @@
   "version": "0.3.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": {
     "email": "hacxy.js@outlook.com",
     "name": "hacxy"
@@ -11,6 +12,7 @@
   "license": "MIT",
   "files": [
     "dist",
+    "bin",
     "template"
   ],
   "keywords": [
@@ -18,12 +20,12 @@
     "cli"
   ],
   "bin": {
-    "cover": "index.js"
+    "cover": "bin/index.js"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node bin/index.js",
     "dev": "unbuild --stub && npm link",
-    "build": "unbuild",
+    "build": "unbuild --type",
     "typecheck": "tsc --noEmit",
     "changed": "lerna version --conventional-commits --create-release github --yes",
     "release": "lerna publish from-package --yes"
