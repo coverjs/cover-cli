@@ -1,5 +1,5 @@
 {
-  "name": "hite",
+  "name": "laky",
   "version": "0.0.0",
   "description": "",
   "type": "module",
@@ -16,12 +16,12 @@
     "template"
   ],
   "keywords": [
-    "hite",
+    "laky",
     "cli",
-    "hitejs"
+    "lakyjs"
   ],
   "bin": {
-    "hite": "bin/index.js"
+    "laky": "bin/index.js"
   },
   "scripts": {
     "start": "node bin/index.js",
