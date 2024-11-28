@@ -16,11 +16,12 @@
     "template"
   ],
   "keywords": [
-    "coverjs",
-    "cli"
+    "hite",
+    "cli",
+    "hitejs"
   ],
   "bin": {
-    "cover": "bin/index.js"
+    "hite": "bin/index.js"
   },
   "scripts": {
     "start": "node bin/index.js",
