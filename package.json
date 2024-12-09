@@ -30,6 +30,7 @@
     "lint": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "release": "np",
+    "prepublishOnly": "npm run build",
     "postinstall": "simple-git-hooks"
   },
   "peerDependencies": {
