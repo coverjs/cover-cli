@@ -58,5 +58,8 @@
     "*.{js,ts}": [
       "eslint . --fix"
     ]
+  },
+  "np": {
+    "message": "chore: release v%s"
   }
 }
