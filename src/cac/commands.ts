@@ -1,18 +1,14 @@
 import type { CAC } from 'cac';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { generateApi } from 'swagger-typescript-api';
 import { checkCommit, getConfig } from '../utils';
 
-export function handleCommands(cli: CAC) {
+export function handleCommands(cli: CAC, templatePath: string) {
   cli.command('openapi').action(async () => {
     const { generateApi: generateApiConfig } = await getConfig();
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = path.dirname(__filename);
-
     try {
       await generateApi({
-        templates: path.resolve(__dirname, '../template'),
+        templates: templatePath,
         output: path.resolve(process.cwd(), './src/services'),
         silent: true,
         ...generateApiConfig

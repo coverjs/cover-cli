@@ -15,7 +15,7 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       swagger-typescript-api:
-        specifier: ^13.0.14
+        specifier: 13.0.14
         version: 13.0.14(encoding@0.1.13)
       typescript:
         specifier: ^5.4.4
@@ -2528,8 +2528,8 @@ packages:
     resolution: {integrity: sha512-NHDDGYudnvRutt/VhKFlX26IotXe1w0cmkDm6JGquh5bz/bDTw0LufSmH/GxTjEdpHEO+bVKFTwdrcGa/9XlKQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  node-emoji@2.1.3:
-    resolution: {integrity: sha512-E2WEOVsgs7O16zsURJ/eH8BqhF029wGpEOnv7Urwdo2wmQanOACwJQh0devF9D9RhoZru0+9JXIS0dBXIAz+lA==}
+  node-emoji@2.2.0:
+    resolution: {integrity: sha512-Z3lTE9pLaJF47NyMhd4ww1yFTAP8YhYI8SleJiHzM46Fgpm5cnNzSl9XfzFNqbaz+VlJrIj3fXQ4DeN1Rjm6cw==}
     engines: {node: '>=18'}
 
   node-fetch-h2@2.3.0:
@@ -6221,7 +6221,7 @@ snapshots:
     dependencies:
       type-fest: 2.19.0
 
-  node-emoji@2.1.3:
+  node-emoji@2.2.0:
     dependencies:
       '@sindresorhus/is': 4.6.0
       char-regex: 1.0.2
@@ -7047,7 +7047,7 @@ snapshots:
       js-yaml: 4.1.0
       lodash: 4.17.21
       nanoid: 3.3.7
-      node-emoji: 2.1.3
+      node-emoji: 2.2.0
       prettier: 3.3.3
       swagger-schema-official: 2.0.0-bab6bed
       swagger2openapi: 7.0.8(encoding@0.1.13)
