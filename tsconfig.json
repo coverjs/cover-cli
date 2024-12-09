@@ -1,15 +1,15 @@
 {
-  "include": ["src"],
   "compilerOptions": {
     "target": "ES2022",
+    "rootDir": "src",
     "module": "ES2020",
     "moduleResolution": "bundler",
     "strict": true,
-    "skipLibCheck": true,
+    "noUnusedLocals": true,
     "declaration": true,
     "sourceMap": true,
-    "noUnusedLocals": true,
     "esModuleInterop": true,
-    "rootDir": "src"
-  }
+    "skipLibCheck": true
+  },
+  "include": ["src"]
 }

@@ -54,13 +54,12 @@ export function checkCommit() {
 
   if (!commitRE.test(msg)) {
     console.error(
-      `
-        ${pico.white(pico.bgRed(' ERROR '))} ${pico.red('invalid commit message format.')}\n\n${pico.red(
-          '  Proper commit message format is required for automated changelog generation. Examples:\n\n'
-        )}    ${pico.green('feat(system/user): add user list')}\n`
-        + `    ${pico.green('fix(profile): handle type error (close #28)')}\n\n${pico.red(
-          '  See .github/commit-convention.md for more details.\n'
-        )}`
+      `\n${pico.white(pico.bgRed(' ERROR '))} ${pico.red('invalid commit message format.')}\n\n${pico.red(
+        '  Proper commit message format is required for automated changelog generation. Examples:\n\n'
+      )}    ${pico.green('feat(system/user): add user list')}\n`
+      + `    ${pico.green('fix(profile): handle type error (close #28)')}\n\n${pico.red(
+        '  See .github/commit-convention.md for more details.\n'
+      )}`
     );
     process.exit(1);
   }
