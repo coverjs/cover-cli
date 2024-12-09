@@ -1,2 +1,2 @@
-export const JS_CONFIG_FILE = 'cover.config.js';
-export const TS_CONFIG_FILE = 'cover.config.ts';
+export const JS_CONFIG_FILE = 'laky.config.js';
+export const TS_CONFIG_FILE = 'laky.config.ts';

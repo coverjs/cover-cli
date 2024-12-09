@@ -12,7 +12,7 @@ export async function getConfig(): Promise<UserConfig> {
   const configPath = fs.existsSync(jsConfigPath) ? jsConfigPath : tsConfigPath;
 
   if (!fs.existsSync(configPath)) {
-    console.warn('cover.config not found');
+    console.error('laky.config not found');
     process.exit(1);
   }
 
@@ -25,7 +25,7 @@ export async function getConfig(): Promise<UserConfig> {
         module: ts.ModuleKind.ESNext
       }
     }).outputText;
-    const fileBase = `cover.timestamp-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    const fileBase = `laky.timestamp-${Date.now()}-${Math.random().toString(16).slice(2)}`;
     const fileNameTmp = `${fileBase}.js`;
     const fileUrl = `${pathToFileURL(fileBase)}.js`;
     fs.writeFileSync(fileNameTmp, jsCode);
