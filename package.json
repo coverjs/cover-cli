@@ -61,6 +61,7 @@
     ]
   },
   "np": {
-    "message": "chore: release v%s"
+    "message": "chore: release v%s",
+    "tests": false
   }
 }
