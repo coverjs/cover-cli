@@ -1,10 +1,11 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
+import linter from '@lakyjs/eslint-config/cli';
 
-
-export default [
-  {languageOptions: { globals: globals.node }},
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-];
+export default linter({
+  typescript: true,
+  yaml: true,
+  rules: {
+    'unused-imports/no-unused-imports': 2,
+    'node/prefer-global/buffer': 0,
+    'node/prefer-global/process': [0, 'never'],
+  }
+});

@@ -1,48 +1,37 @@
 {
   "name": "laky",
+  "type": "module",
   "version": "0.3.3",
   "description": "",
-  "type": "module",
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "author": {
     "email": "hacxy.js@outlook.com",
     "name": "hacxy"
   },
   "license": "MIT",
-  "files": [
-    "dist",
-    "bin",
-    "template"
-  ],
   "keywords": [
     "laky",
     "cli",
     "lakyjs"
   ],
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "bin": {
     "laky": "bin/index.js"
   },
+  "files": [
+    "bin",
+    "dist",
+    "template"
+  ],
   "scripts": {
     "start": "node bin/index.js",
     "dev": "unbuild --stub && npm link",
     "build": "unbuild --type",
+    "lint": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "changed": "lerna version --conventional-commits --create-release github --yes",
-    "release": "lerna publish from-package --yes"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.1.1",
-    "@lerna-lite/cli": "^3.3.3",
-    "@lerna-lite/publish": "^3.3.3",
-    "@lerna-lite/version": "^3.3.3",
-    "@types/node": "^20.12.5",
-    "concurrently": "^8.2.2",
-    "conventional-changelog-conventionalcommits": "^7.0.2",
-    "eslint": "^8.57.0",
-    "globals": "^15.0.0",
-    "typescript-eslint": "^7.7.1",
-    "unbuild": "^2.0.0"
+    "release": "np",
+    "prepublishOnly": "npm run build",
+    "postinstall": "simple-git-hooks"
   },
   "peerDependencies": {
     "typescript": "^5.4.4"
@@ -51,5 +40,27 @@
     "cac": "^6.7.14",
     "picocolors": "^1.1.1",
     "swagger-typescript-api": "^13.0.14"
+  },
+  "devDependencies": {
+    "@lakyjs/eslint-config": "^0.0.1",
+    "@types/node": "^20.12.5",
+    "eslint": "^9.16.0",
+    "lint-staged": "^15.2.10",
+    "np": "^10.1.0",
+    "simple-git-hooks": "^2.11.1",
+    "tsx": "^4.19.2",
+    "unbuild": "^2.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "npx tsx scripts/check-commit.ts"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint . --fix"
+    ]
+  },
+  "np": {
+    "message": "chore: release v%s"
   }
 }

@@ -1,8 +1,8 @@
+import type { UserConfig } from './types';
 import { bootstrap } from './cac';
-import { UserConfig } from './types';
 
 bootstrap();
 
-export const defineConfig = (options: UserConfig) => {
+export function defineConfig(options: UserConfig) {
   return options;
-};
+}
