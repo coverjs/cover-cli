@@ -31,7 +31,7 @@
     "typecheck": "tsc --noEmit",
     "release": "np",
     "prepublishOnly": "npm run build",
-    "postinstall": "simple-git-hooks"
+    "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
     "typescript": "^5.4.4"
