@@ -62,6 +62,7 @@
   },
   "np": {
     "message": "chore: release v%s",
-    "tests": false
+    "tests": false,
+    "testScript": "typecheck"
   }
 }
